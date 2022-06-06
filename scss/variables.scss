@@ -1,0 +1,23 @@
+$colorBlanco: #fff;
+$colorNegro: #000;
+$colorGris: #aaa;
+
+$coloresLetra:("blanco": #fff,"negro": #000,"fondo": #141414,"rojo": #e50914,"grisClaro": #aaa,"grisOscuro": #4d4d4d);
+$coloresFondo:("blanco": #fff,"negro": #000,"fondo": #141414,"rojo": #e50914,"grisClaro": #aaa,"grisOscuro": #4d4d4d);
+
+@each $name,$color in$coloresFondo{
+    .colorFondo-#{$name}{
+        background-color: $color;
+    }
+}
+
+@each $name,$color in$coloresLetra{
+    .colorLetra-#{$name}{
+        color: $color;
+    }
+}
+
+@mixin formato($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}

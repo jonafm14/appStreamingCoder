@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap");
+.colorFondo-blanco {
+  background-color: #fff; }
+
+.colorFondo-negro {
+  background-color: #000; }
+
+.colorFondo-fondo {
+  background-color: #141414; }
+
+.colorFondo-rojo {
+  background-color: #e50914; }
+
+.colorFondo-grisClaro {
+  background-color: #aaa; }
+
+.colorFondo-grisOscuro {
+  background-color: #4d4d4d; }
+
+.colorLetra-blanco {
+  color: #fff; }
+
+.colorLetra-negro {
+  color: #000; }
+
+.colorLetra-fondo {
+  color: #141414; }
+
+.colorLetra-rojo {
+  color: #e50914; }
+
+.colorLetra-grisClaro {
+  color: #aaa; }
+
+.colorLetra-grisOscuro {
+  color: #4d4d4d; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.contenedor {
+  width: 90%;
+  margin: auto; }
+
+header {
+  padding: 30px 0; }
+  header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  header .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 2.5em; }
+  header nav a {
+    text-decoration: none;
+    margin-right: 1.25em;
+    color: #fff; }
+  header nav a:hover {
+    color: #aaa; }
+
+.indexMain {
+  grid-template-areas: "portada" "planes" "estrenos" "compatibilidad" "preguntas";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr); }
+
+.portada {
+  grid-area: portada;
+  margin: 2.5em auto; }
+  .portada .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .portada .contenedor h1 {
+      font-size: 2em;
+      font-style: none;
+      text-align: center; }
+    .portada .contenedor h2 {
+      font-size: 1.25em;
+      font-style: none;
+      text-align: center; }
+    .portada .contenedor h4 {
+      font-size: 0.9em;
+      font-style: none;
+      text-align: center; }
+    .portada .contenedor form button {
+      width: 12.5em;
+      height: 3.125em; }
+    .portada .contenedor form input {
+      width: 31.25em;
+      height: 3.125em; }
+
+.contenedorPlanes {
+  grid-area: planes;
+  padding-top: 1.875em;
+  display: flex;
+  justify-content: center; }
+  .contenedorPlanes .contenedorPlanes__div {
+    margin: 0.625em;
+    width: 18.75em;
+    height: 18.75em; }
+
+.proximosEstrenos {
+  grid-area: estrenos;
+  display: flex;
+  justify-content: center;
+  margin: 0.625em; }
+  .proximosEstrenos img {
+    cursor: pointer;
+    transition: all 300ms ease;
+    width: 15.625em;
+    margin: 0 5px; }
+  .proximosEstrenos img:hover {
+    transform: scale(1.1);
+    z-index: 1; }
+
+.contenedorCom {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+  .contenedorCom .contenedorCompatibilidad__div {
+    margin: 0.625em;
+    width: 18.75em;
+    height: 18.75em; }
+    .contenedorCom .contenedorCompatibilidad__div .contenedorCompatibilidad__div__lista {
+      list-style: none; }
+    .contenedorCom .contenedorCompatibilidad__div .contenedorCompatibilidad__div__img {
+      width: 4.375em;
+      height: 4.375em; }
+
+.contenedorCompatibilidad {
+  grid-area: compatibilidad;
+  padding-top: 1.875em;
+  display: flex;
+  justify-content: center; }
+
+.accordion {
+  grid-area: preguntas; }
+
+.contenedorEmpresasHome {
+  width: 60%;
+  margin: auto; }
+
+.contenedorPeliculasHome {
+  width: 350px; }
+
+.contenedorFlex {
+  display: flex; }
+
+.imgHover {
+  cursor: pointer;
+  transition: all 300ms ease; }
+
+.imgHover:hover {
+  transform: scale(1.1);
+  z-index: 1; }
+
+.peliculasPrincipal {
+  display: flex;
+  flex-direction: column; }
+
+.tituloPrincipalPeliculas {
+  display: flex; }
+
+.tituloPrincipalPeliculas select {
+  color: #000; }
+
+.contenedorPeliculas img {
+  width: 20em; }
+
+.formSection {
+  padding: 30px;
+  margin: 25px auto;
+  border-radius: 15px; }
+
+.sectionForm {
+  display: flex;
+  justify-content: center;
+  margin: auto; }
+
+.cardSerie img {
+  width: 300px; }
+
+.portadaSerie {
+  margin-bottom: 30px; }
+
+.series {
+  margin: 40px auto; }
+  .series .contenedor {
+    display: grid;
+    grid-template-areas: "texto portadas"; }
+    .series .contenedor .series__div {
+      grid-area: texto;
+      color: #fff; }
+      .series .contenedor .series__div .series__div__titulo {
+        font-weight: 600;
+        font-size: 3.12em;
+        margin-bottom: 0.4em; }
+      .series .contenedor .series__div .series__div__descripcion {
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1.75em;
+        max-width: 50%;
+        margin-bottom: 1.25em; }
+    .series .contenedor .series__img {
+      grid-area: portadas;
+      display: flex; }
+      .series .contenedor .series__img img {
+        width: 15.625em; }
+
+footer {
+  margin-top: 1.875em; }
+  footer .contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625em; }
+  footer .redes div {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    footer .redes div a {
+      text-decoration: none;
+      color: #fff; }
+    footer .redes div a:hover {
+      color: #aaa; }
+  footer .informacion div h4 {
+    font-size: 1.25em;
+    text-align: center; }
+  footer .informacion div p {
+    font-size: 1em;
+    text-align: center; }
+  footer .informacion div a {
+    text-decoration: none; }
+
+@media (max-width: 1200px) {
+  .portada__img {
+    width: 100%; }
+  .contenedorPlanes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .contenedorPlanes .contenedorPlanes__titulo, .contenedorPlanes .contenedorPlanes__div, .contenedorPlanes .contenedorCompatibilidad__titulo {
+      margin: 0 auto; }
+  .proximosEstrenos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contenedorCom {
+    display: flex;
+    flex-direction: column; }
+    .contenedorCom .contenedorCompatibilidad__div {
+      margin: 15px auto; }
+  .contenedorPeliculas {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 800px) {
+  header .contenedor {
+    display: flex;
+    flex-direction: column; }
+  .portada .contenedor form button {
+    width: 6.25em;
+    height: 3.125em; }
+  .portada .contenedor form input {
+    width: 21.875em;
+    height: 3.125em; }
+  .recomendados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center; }
+  .contenedorPeliculas {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr; }
+  .peliculaPrincipal__titulo {
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 0.4em; }
+  .peliculaPrincipal__descripcion {
+    font-size: 1em;
+    line-height: 1em;
+    margin-bottom: 1em; }
+  .series .contenedor {
+    display: grid;
+    grid-template-areas: "texto" "portadas"; }
+    .series .contenedor .series__div {
+      display: flex;
+      justify-content: space-between; }
+    .series .contenedor .series__img {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center; }
+  footer .contenedor {
+    flex-direction: column;
+    align-items: center; }
+  footer .redes {
+    margin: 2em auto; } }
+
+@media (max-width: 600px) {
+  .recomendados {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+  .contenedor h2 {
+    text-align: center; }
+  .series .contenedor .series__img {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+  .series .contenedor .series__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
